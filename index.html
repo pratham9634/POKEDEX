@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav-bar">
+        <img class="icon" src="https://i.postimg.cc/sgSntNKx/Pok-dex-logo-removebg-preview.png" alt="pokedex-icon">
+    </div>
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search for a Pokémon">
+    </div>
+    <div class="container">
+        <div class="pokemon-list">
+            <div class="pokemon-card">
+                    <img class="image" src="https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/025.png" alt="pokemon" >
+                    <div class="number">
+                        #25
+                    </div>
+                    <div class="name">
+                        PIKACHU
+                    </div>
+                    <div class="type">
+                        electric
+                    </div>
+            </div>
+        </div>
+        <div class="pokemon-detail">
+            <div id="pokedex">
+                <div id="top">
+                    
+                    <div id="poke-image-placeholder">
+                        <img src="/images/001.png" id="pokemon-image" alt="pokemon-image" />
+                    </div>
+                </div>
+                <div id="data">
+                    <div id="types">
+                        <span
+                            style="background-color: rgb(116, 203, 72);"
+                            class="type"
+                        >
+                            Grass
+                        </span>
+                        <span
+                            style="background-color: rgb(164,  62, 158);"
+                            class="type"
+                        >
+                            Poison
+                        </span>
+                    </div>
+        
+                    <h4 id="base-stats" style="color: rgb(116, 203, 72);">Base Stats</h4>
+        
+                    <div id="stats">
+                        <div class="stat-row">
+                            <div class="stat-desc">HP</div>
+                            <div class="stat-number">045</div>
+                            <div class="stat-bar">
+                                <div class="bar-outer">
+                                    <div class="bar-inner" style="width: 45%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-desc">ATK</div>
+                            <div class="stat-number">049</div>
+                            <div class="stat-bar">
+                                <div class="bar-outer">
+                                    <div class="bar-inner" style="width: 49%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-desc">DEF</div>
+                            <div class="stat-number">049</div>
+                            <div class="stat-bar">
+                                <div class="bar-outer">
+                                    <div class="bar-inner" style="width: 49%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-desc">SATK</div>
+                            <div class="stat-number">065</div>
+                            <div class="stat-bar">
+                                <div class="bar-outer">
+                                    <div class="bar-inner" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-desc">SDEF</div>
+                            <div class="stat-number">065</div>
+                            <div class="stat-bar">
+                                <div class="bar-outer">
+                                    <div class="bar-inner" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-desc">SPD</div>
+                            <div class="stat-number">045</div>
+                            <div class="stat-bar">
+                                <div class="bar-outer">
+                                    <div class="bar-inner" style="width: 45%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
